@@ -1,0 +1,15 @@
+version: '3'
+networks:
+    lordrhodos:
+        external: true
+services:
+    slim:
+        image: lordrhodos/slim4-docker-demo:latest
+        container_name: slim
+        ports:
+        - 8070:80
+        volumes:
+        - .:/var/www/app
+        environment:
+            PHP_IDE_CONFIG: "serverName=localhost"
+            XDEBUG_CONFIG: remote_host=10.254.254.254

@@ -1,0 +1,25 @@
+{
+    "name": "lordrhodos/slim4-docker",
+    "description": "Php 7.4 docker image with Slim4 framework",
+    "type": "project",
+    "license": "MIT",
+    "config": {
+        "sort-packages": true
+    },
+    "authors": [
+        {
+            "name": "Patrick Rodacker",
+            "email": "patrick@rodacker.de"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "slim/psr7": "^0.5.0",
+        "slim/slim": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lordrhodos\\Slim4\\": "src"
+        }
+    }
+}
